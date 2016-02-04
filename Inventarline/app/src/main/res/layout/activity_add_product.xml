@@ -46,7 +46,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:textColor="#000000"
-        android:background="@drawable/text_area_customize" />
+        android:background="@drawable/text_area_customize"
+        android:hint=" Ingrese Producto"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,7 +70,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:textColor="#000000"
-        android:background="@drawable/text_area_customize"/>
+        android:background="@drawable/text_area_customize"
+        android:hint=" Ingrese cantidad"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -91,7 +93,8 @@
         android:layout_alignEnd="@+id/editText2"
         android:textColor="#000000"
         android:background="@drawable/text_area_customize"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:hint=" Ingrese Unidad de medida"/>
 
     <Button
         android:layout_width="wrap_content"
