@@ -1,0 +1,9 @@
+------------------------------
+          MODO DE USO
+------------------------------
+
+Ubicar la carpeta Inventarline 
+en htdocs de su servidor xampp 
+alojado localmente
+
+            3JSOFT

@@ -1,0 +1,10 @@
+------------------------------
+          MODO DE USO
+------------------------------
+
+Ubicar la carpeta Inventarline 
+en la carpeta de su elección.
+Utilizar Android Studio 
+(API 23)
+
+            3JSOFT
