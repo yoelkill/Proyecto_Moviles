@@ -1,0 +1,50 @@
+body{
+	background-image: url('../images/wallpaper.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% absolute;
+	background-position: absolute;
+}
+.separator{
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+}
+.spanTextHelp a{
+	margin-top: .2em;
+	margin-bottom: .2em;
+	text-align: right;
+	text-decoration: none;
+	color:#6669C5;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.spanTextRegister a{
+	margin-top: .2em;
+	margin-bottom: .2em;
+	text-align: right;
+	text-decoration: none;
+	font-color:#6669C9;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.styleLogin{
+	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.8);
+}
+.textSizeButton{
+	font-size: 1.4em;
+}
+.modal-footer {   
+	border-top: 0; 
+}
+.titleBox{
+  position: center;
+  background-color: rgba(0,0,0,0.7);
+  color:#FFFFFF;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 15px;
+  outline: 0;
+}
