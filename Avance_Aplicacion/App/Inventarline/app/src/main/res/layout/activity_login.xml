@@ -26,7 +26,6 @@
             android:textStyle="bold"
             android:gravity="center"
             android:textColor="#FFFFFF"
-
             android:textSize="30dp"/>
     </LinearLayout>
     <LinearLayout
@@ -67,7 +66,7 @@
                 android:text="Usuario        "
                 android:textSize="25dp"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold"/>
+                android:textStyle="bold|italic"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -108,7 +107,7 @@
                 android:text="Contraseña "
                 android:textSize="25dp"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold"/>
+                android:textStyle="bold|italic"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -146,10 +145,12 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="  INICIAR SESIÓN  "
+                android:text="INICIAR SESIÓN"
                 android:id="@+id/buttonLogIn"
-                android:textSize="20dp"
+                android:textSize="16dp"
+                android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_customize_continue"/>
+                android:paddingBottom="@dimen/activity_horizontal_margin"
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -161,8 +162,9 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="         BORRAR         "
-                android:textSize="20dp"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="BORRAR"
+                android:textSize="16dp"
                 android:gravity="center"
                 android:id="@+id/buttonClear"
                 android:background="@drawable/button_customize_cancel"/>

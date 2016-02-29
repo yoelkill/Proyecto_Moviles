@@ -1,107 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.moviles.jlpsoft.inventarline.AddProduct"
-    android:background="@drawable/wallpaperprincipal"
-    android:focusable="true">
-
-    <TextView
-        android:layout_width="wrap_content"
+    android:id="@+id/linLayoutGroupMain"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.moviles.jlpsoft.inventarline.LoginActivity"
+    android:background="@drawable/wallpaperprincipal">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Ingreso de Producto"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="#ffffff"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="italic" />
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/linLayoutGroupHeader"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rectangle_design_header_login">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="Ingreso de Producto"
+            android:textStyle="bold|italic"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Producto:"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:textColor="#ffffff"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:textStyle="italic"/>
+        android:id="@+id/linLayoutGrupProducto"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linLayoutTextViewProducto"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/textViewProducto"
+                android:text="Producto :"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutEditTextProducto"
+            android:orientation="horizontal"
+            android:background="@drawable/text_area_customize">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextProducto"
+                android:hint="Ingrese Producto"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
 
-    <EditText
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="#000000"
-        android:background="#ffffff" />
+        android:id="@+id/linLayoutGroupCantidad"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linLayoutTextViewCantidad"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/textViewPassword"
+                android:text="Cantidad  :"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|italic"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutEditTextCantidad"
+            android:orientation="horizontal"
+            android:background="@drawable/text_area_customize">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Cantidad"
+                android:id="@+id/editTextCantidad"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Cantidad"
-        android:id="@+id/textView3"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:textStyle="italic"
-        android:textColor="#ffffff"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/linLayoutGroupUnidMedida"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linLayoutTextViewUndMedida"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/textViewUndMedid"
+                android:text="Und Medida:"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|italic"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutEditTextPassword"
+            android:orientation="horizontal"
+            android:background="@drawable/text_area_customize">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Und de Medida"
+                android:id="@+id/editTextUndMedid"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
 
-    <EditText
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="#000000"
-        android:background="#ffffff"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Unidad de Medida"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentStart="true"
-        android:textSize="25sp"
-        android:textStyle="italic"
-        android:textColor="#ffffff"/>
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/textView4"
-        android:layout_alignEnd="@+id/editText2"
-        android:textColor="#000000"
-        android:background="#ffffff"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Procesar"
-        android:id="@+id/button"
-        android:layout_below="@+id/editText3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp"
-        android:background="@drawable/button_customize_continue"/>
+        android:id="@+id/linLayoutGroupBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutBtnProc"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="PROCESAR"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:id="@+id/buttonClear"
+                android:background="@drawable/button_customize_cancel"/>
+        </LinearLayout>
+    </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>
