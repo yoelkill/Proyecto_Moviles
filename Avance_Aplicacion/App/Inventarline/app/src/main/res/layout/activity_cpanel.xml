@@ -1,96 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/linLayoutGroupCpanel"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.moviles.jlpsoft.inventarline.Cpanel"
-    android:background="@drawable/wallpaperprincipal"
-    android:focusable="true">
+    android:background="@drawable/wallpaperprincipal">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  Agregar Producto  "
-        android:id="@+id/btAdd"
-        android:layout_marginBottom="69dp"
-        android:layout_above="@+id/btListing"
-        android:layout_alignParentStart="true"
-        android:background="@drawable/button_customize_continue"
-        android:textAlignment="center" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="  Modificar Producto  "
-        android:id="@+id/btModify"
-        android:layout_alignBottom="@+id/btAdd"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/button_customize_continue"
-        android:textAlignment="center" />
+        android:id="@+id/linLayoutGroupHeader"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rectangle_design_header_login">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="Opciones del Sistema"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"/>
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Listar Producto"
-        android:id="@+id/btListing"
-        android:layout_alignBaseline="@+id/btDelete"
-        android:layout_alignBottom="@+id/btDelete"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/btAdd"
-        android:background="@drawable/button_customize_continue"
-        android:textAlignment="center" />
+        android:id="@+id/linLayoutGroupButtons1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutButtonAddProd"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar Producto"
+                android:textStyle="bold"
+                android:id="@+id/btnAddProd"
+                android:textSize="12.5dp"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_customize_continue"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Eliminar Producto"
-        android:id="@+id/btDelete"
-        android:layout_marginBottom="71dp"
-        android:layout_above="@+id/btReport"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/button_customize_continue"
-        android:layout_alignStart="@+id/btModify"
-        android:textAlignment="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutButtonModProd"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Modificar Producto"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:id="@+id/btnModProc"
+                android:background="@drawable/button_customize_continue"/>
+        </LinearLayout>
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="  Generar Informe  "
-        android:id="@+id/btReport"
-        android:layout_marginBottom="74dp"
-        android:background="@drawable/button_customize_continue"
-        android:textAlignment="center"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/btListing" />
+        android:id="@+id/linLayoutGroupButtons2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutButtonListing"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listar Producto"
+                android:id="@+id/btnListing"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_customize_continue"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="OPCIONES DEL SISTEMA"
-        android:textStyle="italic"
-        android:id="@+id/lblOptions"
-        android:textAlignment="center"
-        android:layout_above="@+id/btAdd"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="47dp"
-        android:layout_alignEnd="@+id/btDelete"
-        android:textColor="#ffffff"
-        android:textSize="30sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutButtonDelet"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Eliminar Producto"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:id="@+id/btnDelet"
+                android:background="@drawable/button_customize_continue"/>
+        </LinearLayout>
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="  Cerrar Sesión  "
-        android:id="@+id/btLogout"
-        android:background="@drawable/button_customize_continue"
-        android:textAlignment="center"
-        android:layout_alignBottom="@+id/btReport"
-        android:layout_alignEnd="@+id/lblOptions"
-        android:layout_alignStart="@+id/btDelete" />
-</RelativeLayout>
+        android:id="@+id/linLayoutGroupButtons3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutButtonGener"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generar Informe"
+                android:textStyle="bold"
+                android:id="@+id/btnGener"
+                android:textSize="14dp"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_customize_continue"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
