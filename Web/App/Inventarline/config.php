@@ -1,9 +1,6 @@
 <?php
-
 define('hostname', 'localhost');
 define('user', 'root');
-define('password', '');
+define('password', 'jcgf');
 define('db_name', 'bdinventarline');
-
-
 ?>

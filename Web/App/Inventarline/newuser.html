@@ -13,17 +13,21 @@
     <title>Registrar Nuevo Usuario</title>    
 </head>
 
-<body class="grey lighten-4">		 
-	<div class="row form-group">
-    	<form class="col s12">
-    		<h2>Crear un nuevo usuario</h2>
+<body class="principal">		 
+	<form>
+	<div class="grey lighten-3 stylelogin modal-dialog modal-content modal-body">
+    	
+    		<div class="titleBox  grey darken-1 white-text">
+    		<h3 class="center-align">Crear un nuevo usuario</h3>
+    		</div><br/>
 
     <!-- ************CODIGO DEL USUARIO Y CONTRASEÑA********** -->
       
       	<div class="row">
         	<div class="input-field col s12">
-        	<input placeholder="Codigo" id="id" type="text" class="validate">
-          	<label for="id">Codigo</label>
+        	<i class="material-icons prefix">assignment_ind</i>
+        	<input id="id" type="text" class="validate">
+          	<label for="id">Usuario</label>
         	</div>
       	</div>
       
@@ -38,13 +42,14 @@
     <!-- ***************INFORMACION DEL USUARIO************ -->
         
       	<div>
-      		<h6>Informacion General del Usuario</h6>
+      		<h5 class="margin-right margin-left">Informacion General del Usuario</h5>
+      		<hr/>
       	</div>
         <div class="row">
         	<div class="input-field col s6">
           	 <i class="material-icons prefix">account_circle</i>
           	<input id="first_name" type="text" class="validate">
-          	<label for="first_name">Nombres</label>
+          	<label for="first_name">Nombre</label>
         	</div>
         	<div class="input-field col s6">
          	<i class="material-icons prefix">account_circle</i>
@@ -78,39 +83,28 @@
         	<div class="input-field col s12">
         	<i class="material-icons prefix">location_on</i>
           	<input id="city" type="text" class="validate">
+          	<label for="city">Direccion</label>
+        	</div>
+      
+        	<div class="input-field col s6">
+        	<i class="material-icons prefix">location_on</i>
+          	<input id="city" type="text" class="validate">
           	<label for="city">Ciudad</label>
         	</div>
-      	</div>
+      	</div>  
+    	
+    	<div class="modal-footer">
+            <div class="col s12">
+    	       	<a class="left  margin-left btn waves-effect waves-light lime darken-3" href="index.html">INICIO<i class="material-icons left">replay</i></a>
 
-    	<div>
-            <a class="left margin-left btn waves-effect waves-light lime darken-4" name="action" href="index.html">ACTUALIZAR
-              <i class="material-icons right">loop</i>
-            </a>
-            <a class="margin-right right btn waves-effect waves-light lime darken-4" name="action" href="##" >REGISTRAR
-              <i class="material-icons right">spellcheck</i>
-            </a>
-        </div>    
-
-    	</form>
+      			<a class="right margin-right btn waves-effect waves-light lime darken-3" name="action" href="##" >PROCESAR
+             	<i class="material-icons right">spellcheck</i>
+            	</a>
+            </div> 	
+  		</div>
   	</div>
-
-
-
-
-
-<!--
- 	Dropdown Trigger 
-  	<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
-
-   Dropdown Structure 
-  	<ul id='dropdown1' class='dropdown-content'>
-    	<li><a href="#!">one</a></li>
-    	<li><a href="#!">two</a></li>
-    	<li class="divider"></li>
-    	<li><a href="#!">three</a></li>
-  	</ul>
--- >
-
+  	</form>
+    
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
