@@ -4,7 +4,7 @@
 			private $connect;
 			function __construct() {
 		
-			$this->connect = mysqli_connect(hostname, user, password, db_name)
+			$this->connect = mysql_connect(hostname, user, password, db)
 				or die("No se pudo conectar a la Base de Datos");	
 		}	
 		public function getConnection(){

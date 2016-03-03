@@ -8,9 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <title>Login Inventarline</title>
@@ -18,7 +16,7 @@
   </head>
 
   <body class="principal">
-    <form>
+    <form action="login.php" method="post">
       <div class="grey lighten-3 stylelogin modal-dialog modal-content modal-body" >
         <div class="col s12">  
           <div class="titleBox grey darken-1 white-text">
@@ -31,17 +29,17 @@
             </div>
 
             <div class="input-field col s12">
-              <input id="user" type="text" class="validate">
-              <label for="user"><i class="material-icons left">perm_identity</i>Usuario</label>
+              <input id="id" type="text" name="name" class="validate">
+              <label for="id"><i class="material-icons left">perm_identity</i>Usuario</label>
             </div>  
             <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
+              <input id="password" type="password" name="password" class="validate">
               <label for="password"><i class="material-icons left">vpn_key</i>Contraseña</label>
             </div>
           </div>
            
             <div>
-              <button class="btn waves-effect waves-light btn-large" type="submit" name="action">ENVIAR
+              <button class="btn waves-effect waves-light btn-large" >ENVIAR
               <i class="material-icons right">send</i>
               </button>
             </div>
@@ -52,7 +50,7 @@
                 <div><br>
                   <span class="spanTextRegister"><a href="newuser.html">Registrate Aquí</a> </span>
               
-                  <button class="right btn waves-effect waves-light lime darken-3" type="submit" name="action">Cancelar
+                  <button class="right btn waves-effect waves-light lime darken-3" type="submit"> Cancelar
                     <i class="material-icons left">not_interested</i>
                   </button>
                 </div>
