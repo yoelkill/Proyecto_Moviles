@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.moviles.jlpsoft.registrodedocente.MainActivity"
+    android:background="@drawable/wallpaper">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/linearLayoutTextViewMainMenu">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="MENÚ PRINCIPAL"
+            android:id="@+id/textViewMainMenu"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:id="@+id/linearLayoutButtonInsert">
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/buttonInsert"
+            android:background="@drawable/btn_back"
+            android:text="INSERTAR PERSONA"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutButtonFind"
+        android:gravity="center"
+        android:paddingTop="10dp">
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonFind"
+            android:background="@drawable/btn_back"
+            android:text=" BUSCAR PERSONA "/>
+    </LinearLayout>
+</LinearLayout>
