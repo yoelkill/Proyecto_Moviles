@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Personas</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_inser_per">InserPer</string>
-    <string name="title_activity_busc_per">BuscPer</string>
-</resources>
