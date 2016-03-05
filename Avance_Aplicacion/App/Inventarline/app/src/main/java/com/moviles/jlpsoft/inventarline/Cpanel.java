@@ -24,7 +24,7 @@ public class Cpanel extends AppCompatActivity {
         btListing=(Button)findViewById(R.id.btListing);
         btDelete=(Button)findViewById(R.id.btDelete);
         btReport=(Button)findViewById(R.id.btReport);
-        btLogout=(Button)findViewById(R.id.btLogout);
+        //btLogout=(Button)findViewById(R.id.btLogout);
 
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,12 +61,12 @@ public class Cpanel extends AppCompatActivity {
                 startActivity(GenerateReport);
             }
         });
-        btLogout.setOnClickListener(new View.OnClickListener() {
+       /* btLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent LoginActivity=new Intent(Cpanel.this,LoginActivity.class);
                 startActivity(LoginActivity);
             }
-        });
+        });*/
     }
 }

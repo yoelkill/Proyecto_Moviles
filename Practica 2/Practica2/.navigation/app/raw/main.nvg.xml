@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "valero.personas.InserPer"/>
+      <point      
+        x = "1276"      
+        y = "-500"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "valero.personas.OpcionPers"/>
+      <point      
+        x = "44"      
+        y = "140"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "valero.personas.BuscPer"/>
+      <point      
+        x = "1292"      
+        y = "952"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

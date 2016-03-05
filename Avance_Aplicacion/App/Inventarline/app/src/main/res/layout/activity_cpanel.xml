@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:text="Agregar Producto"
                 android:textStyle="bold"
-                android:id="@+id/btnAddProd"
+                android:id="@+id/btAdd"
                 android:textSize="12.5dp"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_customize_continue"/>
@@ -72,7 +72,7 @@
                 android:textStyle="bold"
                 android:textSize="12dp"
                 android:gravity="center"
-                android:id="@+id/btnModProc"
+                android:id="@+id/btModify"
                 android:background="@drawable/button_customize_continue"/>
         </LinearLayout>
     </LinearLayout>
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Listar Producto"
-                android:id="@+id/btnListing"
+                android:id="@+id/btListing"
                 android:textStyle="bold"
                 android:textSize="14dp"
                 android:padding="@dimen/activity_horizontal_margin"
@@ -118,7 +118,7 @@
                 android:textStyle="bold"
                 android:textSize="13dp"
                 android:gravity="center"
-                android:id="@+id/btnDelet"
+                android:id="@+id/btDelete"
                 android:background="@drawable/button_customize_continue"/>
         </LinearLayout>
     </LinearLayout>
@@ -143,7 +143,7 @@
                 android:layout_height="wrap_content"
                 android:text="Generar Informe"
                 android:textStyle="bold"
-                android:id="@+id/btnGener"
+                android:id="@+id/btReport"
                 android:textSize="14dp"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_customize_continue"/>
