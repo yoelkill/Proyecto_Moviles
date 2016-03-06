@@ -1,0 +1,47 @@
+SOFTWARE a Utilizar
+
+Just in Mind  ----Mockups
+Creately  ----UML
+
+Materialize
+	http://materializecss.com/
+jason ....... abarcara todo estos puntos mencionados -- Necesario aprenderselo
+.2 vista --
+ Intranet : 
+  Solo login al roll de administrador .
+  opciones:
+  -agregar
+  -listar .. opciones donde listar : pdf o de gusto .. no excel
+  -cambiar
+  -etc.
+ 
+          
+ Extranet : libertad de grupo web 
+  
+  
+.Puntos de php 
+ ....Materialize  ..
+ usar clases 
+ usar datos almacenados
+ terminar los nombres de campos lo mas pronto 
+ 
+ 
+.Punto Base de datos
+  cambios en la tabla :  empleado (actividad) ,  producto (talla . descripcion )
+
+.Punto android 
+  libreria boolem  
+  cambios en el login
+
+.Punto extra ( este punto se realizara , solo con posibilidad de tener un tiempo dispuesto )
+ sqlite - sincronisar localmente los datos almacenado , estos datos seran almacenados  como backup .
+------------------------------------------------------------------------------------------------
+los puntos previos seran finalizados hasta 25 abril
+
+-------------------------------------------------------------------------------------------------
+.Punto Documentacion
+  definir documento deseño , usuario .
+  
+  
+  
+  
