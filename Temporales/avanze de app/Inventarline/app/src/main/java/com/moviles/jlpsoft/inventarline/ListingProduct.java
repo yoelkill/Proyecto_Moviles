@@ -81,16 +81,13 @@ public class ListingProduct extends AppCompatActivity {
             requestQueue.add(jsonObjectRequest);
         }
     });
-        buttonDelt.setOnClickListener(new View.OnClickListener(){
+        /*buttonDelt.setOnClickListener(new View.OnClickListener(){
 
         @Override
         public void onClick(View v) {
-            startActivity(new Intent().setClass(ListingProduct.this, Cpanel.class));
-            finish();
+           startActivity(new Intent().setClass(ListingProduct.this, Cpanel.class));
+           finish();
         }
-    });
-}
-
-
-
+    });*/
+    }
 }
