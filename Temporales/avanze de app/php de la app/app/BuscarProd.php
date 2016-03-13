@@ -7,7 +7,7 @@ function showTeacher()
 {
 	global $connect;
 
-	$lastname = $_POST["lastname"];
+	$NombreProd = $_POST["NombreProd"];
 
 	$query = " Select * FROM PRODUCT WHERE NAME LIKE '$NombreProd%'; ";
 	$result = mysqli_query($connect, $query);
