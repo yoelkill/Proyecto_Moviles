@@ -7,7 +7,7 @@ function createstudent()
 {
 	global $connect;
 	
-	$product = $_POST["product"];	
+	$name = $_POST["name"];	
 	$price = $_POST["price"];
 	$stock = $_POST["stock"];
 	$category = $_POST["category"];
@@ -15,8 +15,8 @@ function createstudent()
 	$size = $_POST["size"];
 	$color = $_POST["color"];
 
-	$query = " INSERT INTO persona(CODPERSO,NOMPERSO,APELLIPERSO) VALUES ('$product','$price','$stock','$category',
-																			'$Brand','$size','$color');";
+	$query = " INSERT INTO 'product'(`id`,`name`,`price`,`stock`,`idFkcategory`,`idfkBrand`,`idFkSize`,`idFkColor`)
+	VALUES (NULL,'$name','$price','$stock','$category','$Brand','$size','$color');";
 	mysqli_query($connect, $query) or die (mysqli_error($connect));
 	mysqli_close($connect);
 }

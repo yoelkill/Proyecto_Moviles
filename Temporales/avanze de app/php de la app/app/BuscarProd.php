@@ -23,7 +23,7 @@ function showTeacher()
 	}
 	
 	header('Content-Type: application/json');
-	echo json_encode(array("teachers"=>$temp_array));
+	echo json_encode(array("PRODUCTO"=>$temp_array));
 	mysqli_close($connect);
 	
 }

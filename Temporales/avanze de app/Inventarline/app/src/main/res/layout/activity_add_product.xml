@@ -48,7 +48,7 @@
                 android:layout_marginLeft="2dp"
                 android:id="@+id/textViewProducto"
                 android:text="Producto:"
-                android:textSize="25dp"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold|italic" />
         </LinearLayout>
@@ -62,11 +62,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/editTextProducto"
+                android:textSize="15dp"
                 android:hint="Ingrese Producto"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"/>
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -90,7 +91,7 @@
                 android:layout_marginLeft="2dp"
                 android:id="@+id/textViewPric"
                 android:text="Precio     :"
-                android:textSize="25dp"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold|italic" />
         </LinearLayout>
@@ -105,10 +106,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/editTextPric"
                 android:hint="Ingrese Precio"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="15dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -132,7 +134,7 @@
                 android:layout_marginLeft="2dp"
                 android:id="@+id/textViewPassword"
                 android:text="Cantidad :"
-                android:textSize="25dp"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold|italic"/>
         </LinearLayout>
@@ -147,10 +149,11 @@
                 android:layout_height="wrap_content"
                 android:hint="Ingrese Cantidad"
                 android:id="@+id/editTextCantidad"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="15dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -174,7 +177,7 @@
                 android:layout_marginLeft="2dp"
                 android:id="@+id/textViewCat"
                 android:text="Categoria:"
-                android:textSize="25dp"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold|italic" />
         </LinearLayout>
@@ -189,10 +192,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/editTextCat"
                 android:hint="Ingrese Categoria"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="15dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -216,7 +220,7 @@
                 android:layout_marginLeft="2dp"
                 android:id="@+id/textViewMar"
                 android:text="Marca      :"
-                android:textSize="25dp"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold|italic"/>
         </LinearLayout>
@@ -231,10 +235,54 @@
                 android:layout_height="wrap_content"
                 android:hint="Ingrese Marca"
                 android:id="@+id/editTextMar"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="15dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayoutGroupSize"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linLayoutTextViewSize"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/textViewSize"
+                android:text="Talla         :"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold|italic"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linLayoutEditTextSize"
+            android:orientation="horizontal"
+            android:background="@drawable/text_area_customize">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese Talla"
+                android:id="@+id/editTextSize"
+                android:textSize="15dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -258,7 +306,7 @@
                 android:layout_marginLeft="2dp"
                 android:id="@+id/textViewCol"
                 android:text="Color        :"
-                android:textSize="25dp"
+                android:textSize="15dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold|italic"/>
         </LinearLayout>
@@ -273,10 +321,11 @@
                 android:layout_height="wrap_content"
                 android:hint="Ingrese Color"
                 android:id="@+id/editTextCol"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"/>
+                android:textSize="15dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"/>
         </LinearLayout>
     </LinearLayout>
 
